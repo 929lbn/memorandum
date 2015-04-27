@@ -1,0 +1,23 @@
+
+``` java
+int CANCELLED =  1;
+int SIGNAL    = -1;
+int CONDITION = -2;
+int PROPAGATE = -3;
+
+//  共享/排他锁
+Node SHARED = new Node();
+Node EXCLUSIVE = null;
+
+int waitStatus;
+Node prev;
+Node next;
+Thread thread;
+Node nextWaiter;
+        
+Node head;
+Node tail;
+int state;
+```  
+
+![排他锁](http://t1.qpic.cn/mblogpic/97a858685cad5715e470/2000.jpg)
